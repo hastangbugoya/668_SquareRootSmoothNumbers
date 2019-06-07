@@ -14,7 +14,7 @@ How many square root smooth numbers are there not exceeding 10000000000?
 int PrimeFactorLessThanSqrt(long long n, long long original)
 {
 	//not the best but...divine!
-	int i;
+	long long i;
 	if (n == 1) return 1;
 	for (i = 2; (i < n / (float) 2) && (n % i != 0); i++);
 	if (i <= n / 2)
@@ -25,8 +25,9 @@ int PrimeFactorLessThanSqrt(long long n, long long original)
 
 int main()
 {
-	int i, ctr = 0;;
-	for (i = 1; i <= 100; i++)
+	long long i, ctr = 0;
+	printf("\nDammit!");
+	for (i = 1; i <= 10000000000; i++)
 		if (PrimeFactorLessThanSqrt(i, i))
 			ctr++;
 	printf("\n%d", ctr ); 
