@@ -27,10 +27,12 @@ int main()
 {
 	long long i, ctr = 0;
 	printf("\nDammit!");
-	for (i = 1; i <= 10000000000; i++)
+	for (i = 1; i <= 10000000; i++)
 		if (PrimeFactorLessThanSqrt(i, i))
 			ctr++;
 	printf("\n%d", ctr ); 
+	//if (PrimeFactorLessThanSqrt(999999937, 999999937))
+	//	printf("Meh!" ); 
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
